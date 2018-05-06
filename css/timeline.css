@@ -1,0 +1,75 @@
+
+/* Code Source */
+
+.container-timeline {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+.timeline-item p {
+  font-size: 1rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.785rem;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: "";
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+.timeline-item:last-child {
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+/* Gilles */
+
+.gilles-timeline {
+	overflow-y: hidden;
+	overflow-x:hidden;
+}
+.gilles-timeline h1 {
+  color: white;
+  font-size: 30px;
+}
+.timeline-item {
+	border-left: 2px solid #868686;;
+	left: 1em;
+}
+.timeline-item p {
+    font-size: 15px;
+		color: #868686;
+    line-height: 2em;
+}
+.timeline-item::before {
+  left: 1.25em;
+	font-size: 2rem;
+  font-weight: 100;
+	color: #868686;
+}
+.timeline-item::after {
+	left: -6px
+}
+.timeline-item:last-child {
+  border-image: linear-gradient(to bottom, #868686 60%, rgba(0, 0, 0, 0)) 1 100%;
+}

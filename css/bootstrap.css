@@ -4874,8 +4874,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-decoration: none;
   background-color: #eee;
 }
-.pager .next > a,
-.pager .next > span {
+.pager .Suivant> a,
+.pager .Suivant> span {
   float: right;
 }
 .pager .previous > a,
@@ -6333,22 +6333,22 @@ button.close {
 }
 .carousel-inner > .active,
 .carousel-inner > .next,
-.carousel-inner > .prev {
+.carousel-inner > .Précédent{
   display: block;
 }
 .carousel-inner > .active {
   left: 0;
 }
 .carousel-inner > .next,
-.carousel-inner > .prev {
+.carousel-inner > .Précédent{
   position: absolute;
   top: 0;
   width: 100%;
 }
-.carousel-inner > .next {
+.carousel-inner > .Suivant{
   left: 100%;
 }
-.carousel-inner > .prev {
+.carousel-inner > .Précédent{
   left: -100%;
 }
 .carousel-inner > .next.left,
@@ -6421,7 +6421,7 @@ button.close {
   margin-right: -10px;
 }
 .carousel-control .icon-prev,
-.carousel-control .icon-next {
+.carousel-control .icon-Suivant{
   width: 20px;
   height: 20px;
   font-family: serif;
@@ -6481,18 +6481,18 @@ button.close {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
-  .carousel-control .icon-next {
+  .carousel-control .icon-Suivant{
     width: 30px;
     height: 30px;
     margin-top: -15px;
     font-size: 30px;
   }
   .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
+  .carousel-control .icon-Précédent{
     margin-left: -15px;
   }
   .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
+  .carousel-control .icon-Suivant{
     margin-right: -15px;
   }
   .carousel-caption {

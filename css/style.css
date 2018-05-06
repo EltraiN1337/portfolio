@@ -141,7 +141,7 @@ a:focus{
 }
 
 .hero{
-    background: url(../img/hoe2.jpg) center center;
+    background: url(../img/home.jpg) center center;
     background-size: cover;
     display: table;
     width: 100%;
@@ -222,7 +222,7 @@ a:focus{
     font-weight: 600;
     letter-spacing:-3px;
     margin-bottom: 30px;
-    line-height: 102px;
+    line-height: 112px;
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;

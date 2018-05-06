@@ -1,7 +1,6 @@
-	<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from tavonline.net/html/madrid/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Apr 2018 13:19:00 GMT -->
 <head>
 	<title>Gilles Piechocki Portfolio</title>
 	<meta charset="UTF-8">
@@ -13,13 +12,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.theme.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-	<link rel="stylesheet" href="css/bootstrap.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+  	<link rel="stylesheet" href="css/bootstrap.css"/>
+  	<link rel="stylesheet" href="css/style.css"/>
+  	<link rel="stylesheet" href="css/gilles.css"/>
+    <link rel="stylesheet" href="css/timeline.css"/>
 
     <!-- Font icons -->
     <link rel="stylesheet" href="icon-fonts/font-awesome-4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="icon-fonts/web-design/flaticon.css" />
-
+    <link rel="stylesheet" href="icon-fonts/competences/font/flaticon.css" />
+		<link rel="icon" href="img/favicon.png" sizes="16x16 32x32" type="image/png">
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,7 +41,16 @@
     <!-- HEADER -->
     <header>
     	<div class="logo pull-left">
-			<img src="img/logo.png" alt="">
+        <a href="index.html">
+          <svg width="32" height="32">
+              <defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs>
+              <title>Home</title>
+              <g id="Calque_2" data-name="Calque 2">
+              <g id="Calque_1-2" data-name="Calque 1">
+              <path class="cls-1 MmkguHcY_0" d="M8.26,3.7L14.59,1L28.25,7.28L14.59,13.14L1,7.07L1,22.51L14.59,29L14.59,19.31"></path>
+              </g></g><style data-made-with="vivus-instant">.MmkguHcY_0{stroke-dasharray:92 94;stroke-dashoffset:93;animation:MmkguHcY_draw_0 5200ms linear 0ms infinite,MmkguHcY_fade 5200ms linear 0ms infinite;}@keyframes MmkguHcY_draw{100%{stroke-dashoffset:0;}}@keyframes MmkguHcY_fade{0%{stroke-opacity:1;}92.3076923076923%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes MmkguHcY_draw_0{15.384615384615385%{stroke-dashoffset: 93}28.205128205128204%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style>
+          </svg>
+        </a>
 		</div>
 		<div class="hamburger pull-right">
 			<div id="nav-icon">
@@ -52,7 +63,7 @@
 
 	<div class="nav">
         <ul class="menu">
-					<li><a href="index.html">Portfolio</a></li>
+					<li><a href="index.html#portfolio">Portfolio</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li class="social">
@@ -69,8 +80,8 @@
 	<!-- HERO SECTION -->
 	<section class="hero about col-md-12">
 		<div class="hero-inner">
-			<h1> About Agency</h1>
-			<p>The Madrid Agency serves many areas. <br>You can find out about our company from this page  </p>
+			<h1>À Propos</h1>
+			<p>Je ne sais pas quoi mettre<br>Je ne sais pas quoi mettre non plus</p>
         <div id="line-scroll" style="display: block;">
           <div class="line-scroll" id="lsl"> <span class="line active"></span> </div>
         </div>
@@ -88,56 +99,288 @@
         <!-- Text -->
         <div class="col-md-6 col-md-offset-1 about-text">
             <div class="page-title bottom_30">
-                <span>ABOUT US</span>
-                <h2 class="title">We are working on web design, branding and software.</h2>
+                <span>PRESENTATION</span>
+                <h2 class="title">En quelques mots</h2>
             </div>
-            <p>For instance, whenever I go back to the guest house during the <b>morning</b> to copy out the contract, <b>these gentlemen</b> are always still sitting there eating their breakfasts.
-            <br><br>
-    I ought to just try that witht my boss; I'd get kicked out on the spot. But who knows, maybe that would be the best thing for me. He'd fall right off his desk! And it's a funny sort of business to be sitting up there at your desk, talking down at your subordinates.</p>
+            <p>Passioné depuis toujours par l’informatique, ayant un attrait évident pour tout ce qui est visuel, je me suis naturellement tourné vers le
+                métier de <b>graphiste</b>. Mon stage m’a permis de découvrir les métiers du web et d’y prendre très vite goût. Combiné à ma formation de base, je me suis
+                rapidement dirigé vers le <b>web design</b> pour en faire une de mes principales compétences.
+                <br><br>
+                Je peux à présent aussi bien élaborer un wireframe, un layout et coder un site que de la création destiné au <b>display</b> ou du <b>print</b>. J’ai pour objectif d‘acroitre ma créativité,
+                m’améliorer constamment sur le design et pouvoir étendre les types de supports sur
+                lesquels m’exprimer.</p>
         </div>
 	</section>
 
     <div class="line col-md-8 col-md-offset-2 top_120 bottom_120"></div>
 
-    <!-- WHAT WE DO -->
+    <!-- Services -->
     <section class="col-md-12 top_30 bottom_15" style="height: 200px;">
+      <h2 class="gilles-title col-md-12">Services & Compétences</h2>
         <!-- work areas -->
-        <div class="owl-carousel work-areas"  data-pagination="true" data-autoplay="3000" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2" data-items-tablet-small="1">
+        <div class="work-areas">
             <!-- an area -->
-            <div class="area col-md-12 item">
+            <div class="area col-md-4 item">
+                <div class="icon"> <i class="flaticon-vector"></i> </div>
+                <div class="text">
+                    <h6>Graphic Design</h6>
+                    <p>- Affichage, papeterie  <br>- Invitations, brochures <br> - Rapports annuels</p>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 item">
                 <div class="icon"> <i class="flaticon-html"></i> </div>
                 <div class="text">
                     <h6>Web Design</h6>
-                    <p>Cloud agency follows the latest design standards to deliver a beautiful and functional digital product.</p>
+                    <p>- UI & UX Design <br>- Front-End <br> - CMS Wordpress</p>
                 </div>
             </div>
             <!-- an area -->
-            <div class="area col-md-12 item">
+            <div class="area col-md-4 item">
                 <div class="icon"> <i class="flaticon-attach"></i> </div>
                 <div class="text">
-                    <h6>Branding Identity</h6>
-                    <p>We will make you a brand that is catchy and leaves a trace. Your target group will never forget you.</p>
+                    <h6>Display</h6>
+                    <p>- Infographie <br>- Powerpoint <br> - Materiel pour réseaux sociaux</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Compétences -->
+    <section class="col-md-12 top_30 bottom_15 gilles-competences" style="height: 200px;">
+        <!-- work areas -->
+        <div class="work-areas">
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/illustrator.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>Illustrator</h6>
                 </div>
             </div>
             <!-- an area -->
-            <div class="area col-md-12 item">
-                <div class="icon"> <i class="flaticon-vector"></i> </div>
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/indesign.svg" height="32px" width="32px"> </div>
                 <div class="text">
-                    <h6>Illustrator</h6>
-                    <p>I ought to just try that with my boss; I'd get kicked out on the spot. But who knows, maybe that would be the best thing me. </p>
+                    <h6>InDesign</h6>
                 </div>
             </div>
             <!-- an area -->
-            <div class="area col-md-12 item">
-                <div class="icon"> <i class="flaticon-vector"></i> </div>
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/photoshop.svg" height="32px" width="32px"> </div>
                 <div class="text">
-                    <h6>Illustrator</h6>
-                    <p>I ought to just try that with my boss; I'd get kicked out on the spot. But who knows, maybe that would be the best thing me. </p>
+                    <h6>Photoshop</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/powerpoint.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>Powerpoint</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/html5.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>HTML5</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/css3.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>CSS3</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/sass.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>SaSS</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/jquery.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>jQuery</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/wordpress.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>Wordpress</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/bootstrap.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>Bootstrap 4</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/responsive.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>Responsive Design</h6>
+                </div>
+            </div>
+            <!-- an area -->
+            <div class="area col-md-4 col-sm-4 col-xs-6 item">
+                <div class="icon"> <img src="img/icons/svg.svg" height="32px" width="32px"> </div>
+                <div class="text">
+                    <h6>SVG Animations</h6>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="col-md-12 top_30 bottom_15 gilles-competences-2" style="height: 200px;">
+
+      <h2 class="gilles-title-2 col-md-12">Compétences additionnelles</h2>
+
+        <!-- work areas -->
+        <div class="work-areas">
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/pantone.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>Impression Pantone</h6>
+              </div>
+          </div>
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/newsletter.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>Création & Intégration de Newsletter</h6>
+              </div>
+          </div>
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/seo.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>Bonnes notions de SEO</h6>
+              </div>
+          </div>
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/seo.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>Prepros Compiler</h6>
+              </div>
+          </div>
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/github.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>GitHub</h6>
+              </div>
+          </div>
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/seo.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>Bonnes notions de SEO</h6>
+              </div>
+          </div>
+
+        </div>
+
+    </section>
+
+    <section class="col-md-12 top_30 bottom_15 gilles-competences-3" style="height: 200px;">
+
+      <h2 class="gilles-title-3 col-md-12">En cours de formation</h2>
+
+        <!-- work areas -->
+        <div class="work-areas">
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/greensock.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>GreenSock</h6>
+              </div>
+          </div>
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/three.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>Three.js</h6>
+              </div>
+          </div>
+          <!-- an area -->
+          <div class="area col-md-4 item">
+              <div class="icon"> <img src="img/icons/ae.svg" height="32px" width="32px"> </div>
+              <div class="text">
+                  <h6>After Effect</h6>
+              </div>
+          </div>
+        </div>
+
+    </section>
+
+    <div class="line gilles-line-2 col-md-8 col-md-offset-2 top_120 bottom_120"></div>
+
+        <h2 class="gilles-title-4 col-md-12">Parcours</h2>
+
+        <div class="container-timeline gilles-timeline">
+
+        	<div class="timeline-item" date-is='12/2017 - Aujourd’hui'>
+        		<h1>Proffice - Freelancer</h1>
+        		<p>
+             -  <b>proffice.sppg.fr :</b> Wireframe, layout et contenu du site (en développement)<br>
+             -  <b>Alcatel-Lucent :</b> Création de powerpoints & infographies destinés à la communication interne et externe
+        		</p>
+        	</div>
+
+        	<div class="timeline-item" date-is='09/2017 - 12/2017'>
+        		<h1>LITA - Freelancer</h1>
+        		<p>
+             -  <b>Création d’imprimés :</b> Flyers pour la soirée de lancement de Lita.co en Belgique - Brochures<br>
+             -  <b>Création de contenue destiné au web :</b> Elaboration de templates powerpoints destinés à être réutilisés pour la communication interne
+        		</p>
+        	</div>
+
+        	<div class="timeline-item" date-is='03/2016 - 09/2017'>
+        		<h1>Gowie - Stage rémunéré</h1>
+        		<p>
+             -  <b>manager.restopass.com :</b> Design du site - Création des visuels<br>
+             -  <b>gowie.be :</b> Création/Integration/Responsive de landing page et de newsletter<br>
+             -  <b>bruxelleslesbains.be :</b> Repport du site web en application mobile sur CMS<br>
+        		</p>
+        	</div>
+
+          <div class="timeline-item" date-is='09/2015 - 09/2017'>
+        		<h1>EFP Bruxelles - Infographie</h1>
+        		<p>
+              Formation de 720h sur 2 ans, accompagnée d’un stage de 18 mois effectué en parallèle des cours.
+        		</p>
+        	</div>
+
+        </div>
+          <!-- Bouton CV -->
+          <div class="col-md-12">
+
+            <div class="gilles-btn-container">
+              <a class="gilles-btn gilles-btn-1" href="cv/gilles-piechocki-cv.pdf">Télécharger mon CV</a>
+            </div>
+
+        </div>
+        <!-- Controller -->
+        <div class="controller col-md-10 col-md-offset-1 top_120">
+            <a href="index.html#portfolio" class="link pull-left text-left">
+                <div class="where">Précédent</div>
+                <span>Portfolio</span>
+            </a>
+
+            <a href="contact.html" class="link pull-right text-right">
+                <div class="where">Suivant</div>
+                <span>Contact</span>
+            </a>
+        </div>
 	</div>
 
 	<footer class="top_120">
@@ -162,5 +405,4 @@
 
 </body>
 
-<!-- Mirrored from tavonline.net/html/madrid/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Apr 2018 13:19:02 GMT -->
 </html>
