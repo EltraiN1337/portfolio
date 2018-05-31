@@ -1,4 +1,22 @@
 
+/* Général */
+#nav-icon span:nth-child(1) {
+    top: 1px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+/* Work */
+.gilles-row {
+  min-height: 200px!important;
+  height: 200px!important;
+}
+.gilles-row .single_item.figure.figcaption {
+  padding-top: 10%!important;
+}
+
 /* About */
 .line {
   margin-bottom: 2em!important;
@@ -31,14 +49,14 @@
 .gilles-title-3 {
   text-align: center;
   margin-bottom: 2em;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 .gilles-competences {
   margin-top: 4em;
 }
 
-.gilles-competences img {
+.gilles-competences img, .gilles-competences-2 img, .gilles-competences-3 img {
   margin-top: 1em;
 }
 
@@ -46,13 +64,18 @@
   -webkit-filter: contrast(0%);filter: contrast(0%);
 }
 
-.gilles-competences h6 {
+.gilles-competences h6, .gilles-competences-2 h6, .gilles-competences-3 h6 {
   margin-top: 1.75em;
+  font-weight: 200;
 }
 
 .gilles-line {
   margin-top: 3em;
   margin-bottom: 3em!important;
+}
+
+.prepros {
+  top: 3.5em
 }
 
 /*Bouton CV*/
@@ -89,7 +112,62 @@
   background-image: linear-gradient(to right, #593dd5 0%, #fc2b00 51%, #593dd5 100%);
 }
 
+/* Work */
 
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  z-index: 9999;
+}
+
+button svg {
+  padding: 5px;
+  width: 75%;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+
+.left {
+  left: 5%;
+}
+
+.right {
+  left: 95%;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
 
 /*  Responsive */
 @media (max-width: 991px) {
@@ -97,7 +175,7 @@
     margin-top: 45em;
   }
   .gilles-line-2 {
-    margin-top: 60em;
+    margin-top: 25em;
   }
   .gilles-competences {
     position: relative;
@@ -109,7 +187,7 @@
   }
   .gilles-competences-3 {
     position: relative;
-    top: 30em
+    top: 20em
   }
   .gilles-competences-3 .work-areas {
     top: -7em;
@@ -118,29 +196,103 @@
   .gilles-competences img {
     margin-top: 1em;
   }
-  .gilles-title, .gilles-title-2, .gilles-title-3 {
+  .gilles-competences .icon img, .gilles-competences-2 .icon img, .gilles-competences-3 .icon img {
+    height: 24px!important;
+    width: 24px!important;
+  }
+  .work-areas .area .text h6 {
+    font-size: 12px;
+  }
+  .gilles-title, .gilles-title-2, .gilles-title-3, .gilles-title-4 {
     text-align: left;
   }
   .gilles-title-3 {
-    margin-top: 1em;
-    padding-left: 1em;
+    margin-top: 4em;
+    position: relative;
+    left: -15em;
+    padding-bottom: 2em;
   }
+  button svg {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .prepros {
+    top: 0
+  }
+  .gilles-title-3 {
+    margin-top: 7em;
+    position: relative;
+    left: 0;
+    padding-bottom: 3em;
+    top: 0em;
+  }
+  .gilles-competences-3 {
+    position: relative;
+    top: 15em;
+  }
+}
+
+@media (max-width: 563px) {
+  .gilles-title-3 {
+    left: -8em;
+    padding-bottom: 4em;
+    top: 1em;
+  }
+
+}
 
 @media (max-width: 481px) {
   .work-areas .area .text {
-    padding-left: 1em
+    padding-left: .5em;
   }
   .gilles-line {
     margin-top: 65em!important;
   }
-  .gilles-competences img {
+  .gilles-line-2 {
+    margin-top: 40em!important;
+  }
+  .gilles-competences img, .gilles-competences-2 img,  .gilles-competences-3 img {
     margin-top: 1em;
   }
   .gilles-btn-container {
     text-align: center;
     margin-left: 0;
   }
+  .gilles-competences-3 {
+    top: 35em;
+  }
+  .gilles-title-3 {
+    margin-top: 0;
+    left: 0;
+  }
+  .gilles-title-4 {
+    padding-left: 1em;
+  }
+  .gilles-competences-3 .work-areas {
+    top: -17em;
+    position: relative;
+  }
+  .greensock {
+    left: -12em;
+    top: 3em;
+  }
   footer {
-    padding-top: 33px!important;
+    margin-top: 33px!important;
+  }
+}
+
+
+
+@media (max-width: 360px) {
+  button {
+    top : 43%!important;
+  }
+  .left {
+    left: 10%;
+  }
+  .right {
+    left: 90%;
   }
 }

@@ -1,0 +1,317 @@
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white!important;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+.active {
+    border-bottom: 1px solid white;
+}
+
+/* Général */
+#nav-icon span:nth-child(1) {
+    top: 1px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+/* About */
+.line {
+  margin-bottom: 2em!important;
+}
+
+.gilles-title, .gilles-title-2, .gilles-title-3, .gilles-title-4 {
+  font-size: 30px;
+  color: #fff;
+  line-height: 40px;
+  margin: 2px 0 20px 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-linear-gradient(left, #593dd5, #fc2b00);
+  background-image: -moz-linear-gradient(left, #593dd5, #fc2b00);
+  background-image: -ms-linear-gradient(left, #593dd5, #fc2b00);
+  background-image: -o-linear-gradient(left, #593dd5, #fc2b00);
+  background-image: linear-gradient(to right, #593dd5, #fc2b00);
+
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.gilles-title-2 {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+.gilles-title-3 {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 4em;
+}
+
+.gilles-competences {
+  margin-top: 4em;
+}
+
+.gilles-competences img, .gilles-competences-2 img, .gilles-competences-3 img {
+  margin-top: 1em;
+}
+
+.icon img {
+  -webkit-filter: contrast(0%);filter: contrast(0%);
+}
+
+.gilles-competences h6, .gilles-competences-2 h6, .gilles-competences-3 h6 {
+  margin-top: 1.75em;
+  font-weight: 200;
+}
+
+.gilles-line {
+  margin-top: 3em;
+  margin-bottom: 3em!important;
+}
+
+.prepros {
+  top: 3.5em
+}
+
+/*Bouton CV*/
+.gilles-btn-container {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.gilles-btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+ }
+
+.gilles-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+  text-decoration: none;
+}
+
+.gilles-btn-1 {
+  background-image: linear-gradient(to right, #593dd5 0%, #fc2b00 51%, #593dd5 100%);
+}
+
+/* Work */
+
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  z-index: 9999;
+}
+
+button svg {
+  padding: 5px;
+  width: 75%;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+
+.left {
+  left: 5%;
+}
+
+.right {
+  left: 95%;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+/*  Responsive */
+@media (max-width: 991px) {
+  .gilles-line {
+    margin-top: 45em;
+  }
+  .gilles-line-2 {
+    margin-top: 25em;
+  }
+  .gilles-competences {
+    position: relative;
+    top: 3em
+  }
+  .gilles-competences-2 {
+    position: relative;
+    top: 9em
+  }
+  .gilles-competences-3 {
+    position: relative;
+    top: 20em
+  }
+  .gilles-competences-3 .work-areas {
+    top: -7em;
+    position: relative;
+  }
+  .gilles-competences img {
+    margin-top: 1em;
+  }
+  .gilles-competences .icon img, .gilles-competences-2 .icon img, .gilles-competences-3 .icon img {
+    height: 24px!important;
+    width: 24px!important;
+  }
+  .work-areas .area .text h6 {
+    font-size: 12px;
+  }
+  .gilles-title, .gilles-title-2, .gilles-title-3, .gilles-title-4 {
+    text-align: left;
+  }
+  .gilles-title-3 {
+    margin-top: 4em;
+    position: relative;
+    left: -15em;
+    padding-bottom: 2em;
+  }
+  button svg {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .prepros {
+    top: 0
+  }
+  .gilles-title-3 {
+    margin-top: 7em;
+    position: relative;
+    left: 0;
+    padding-bottom: 3em;
+    top: 0em;
+  }
+  .gilles-competences-3 {
+    position: relative;
+    top: 15em;
+  }
+}
+
+@media (max-width: 563px) {
+  .gilles-title-3 {
+    left: -8em;
+    padding-bottom: 4em;
+    top: 1em;
+  }
+
+}
+
+@media (max-width: 481px) {
+  .work-areas .area .text {
+    padding-left: .5em;
+  }
+  .gilles-line {
+    margin-top: 65em!important;
+  }
+  .gilles-line-2 {
+    margin-top: 40em!important;
+  }
+  .gilles-competences img, .gilles-competences-2 img,  .gilles-competences-3 img {
+    margin-top: 1em;
+  }
+  .gilles-btn-container {
+    text-align: center;
+    margin-left: 0;
+  }
+  .gilles-competences-3 {
+    top: 35em;
+  }
+  .gilles-title-3 {
+    margin-top: 0;
+    left: 0;
+  }
+  .gilles-title-4 {
+    padding-left: 1em;
+  }
+  .gilles-competences-3 .work-areas {
+    top: -17em;
+    position: relative;
+  }
+  .greensock {
+    left: -12em;
+    top: 3em;
+  }
+  footer {
+    margin-top: 33px!important;
+  }
+}
+
+
+
+@media (max-width: 360px) {
+  button {
+    top : 43%!important;
+  }
+  .left {
+    left: 10%;
+  }
+  .right {
+    left: 90%;
+  }
+}
